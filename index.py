@@ -5,7 +5,6 @@ from discord.utils import get
 #otros
 import datetime
 from urllib import parse, request
-from ffmpeg import *
 import re
 import youtube_dl
 import os
