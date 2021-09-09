@@ -1,6 +1,5 @@
 discord
 youtube_dl
-os
 re
 datetime
 urllib
