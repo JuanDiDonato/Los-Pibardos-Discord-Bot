@@ -5,16 +5,17 @@ from discord.utils import get
 #otros
 import datetime
 from urllib import parse, request
+from ffmpeg import *
 import re
 import youtube_dl
 import os
+
 
 #Prefix
 bot = commands.Bot(command_prefix="<")
 
 #Defino lista
 lista = []
-
 #Eventos
 @bot.event
 async def on_ready(): #cuando inicie, imprime en consola.
