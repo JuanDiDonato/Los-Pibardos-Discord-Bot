@@ -221,6 +221,7 @@ async def play(ctx, *, search):
             print('[+] Descargando cancion')
             ydl.download([url])
         #Renombra la descarga a song.mp3
+        print('[+] Cancion descargada')
         for file in os.listdir('./'):
             if file.endswith('.m4a') or file.endswith('.webm') or file.endswith('.mp3'):
                 name = file
