@@ -3,12 +3,15 @@ import discord
 from discord.ext import commands
 from discord.utils import get
 #otros
-import datetime
 from urllib import parse, request
+from dotenv import load_dotenv
 import re
 import youtube_dl
 import os
+import datetime
 
+load_dotenv()
+DISCORD_KEY = os.getenv('DISCORD_KEY')
 
 #Prefix
 bot = commands.Bot(command_prefix="<")
@@ -248,4 +251,4 @@ async def next(ctx):
         print('[!] No se esta reproduciendo nada')
         await ctx.send('[!] No se esta reproduciendo nada, no seas ortiva y pone algo :D ')
 
-bot.run("ODcxNDY3OTg1NDk0MjI0OTA3.YQbvzg.M2m60QhMUz9pEVqNKFECTSB9_Fg")
+bot.run(DISCORD_KEY)
